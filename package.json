@@ -1,0 +1,28 @@
+{
+  "name": "github-workers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "wrangler dev src/server.js",
+    "slash": "node src/deploy/register.js",
+    "ngrok": "ngrok http 8787"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^0.4.1",
+    "colors": "^1.4.0",
+    "discord-api-types": "^0.32.1",
+    "discord-interactions": "^3.2.0",
+    "dotenv": "^16.0.1",
+    "itty-router": "^2.6.1"
+  },
+  "devDependencies": {
+    "ngrok": "^4.3.1",
+    "node-fetch": "^2.6.7",
+    "wrangler": "^0.0.18"
+  }
+}
